@@ -1,0 +1,184 @@
+{
+  "Common": {
+    "loading": "načítání..."
+  },
+  "Navigation": {
+    "title": "Open-source digitalni-nastroje.cz Adresář Nástrojů",
+    "discover": "Objevit AI",
+    "submit": "Přidat",
+    "newtools": "Nové Nástroje",
+    "startup": "Startup",
+    "menu": "menu"
+  },
+  "Footer": {
+    "title": "Open-source digitalni-nastroje.cz Adresář Nástrojů",
+    "subTitle": "Objevte nejlepší AI nástroje roku 2024 s digitalni-nastroje.cz Adresářem Nástrojů!",
+    "support": "Podpora",
+    "tap4": "digitalni-nastroje.cz",
+    "tattoo": "AI Generátor Tetování",
+    "privacy": "Zásady ochrany osobních údajů",
+    "termsConditions": "Podmínky použití",
+    "contactUs": "Kontaktujte nás"
+  },
+  "Faq": {
+    "title": "Často kladené otázky",
+    "1": {
+      "question": "Co je Open-source digitalni-nastroje.cz Adresář Nástrojů?",
+      "answer": "digitalni-nastroje.cz Adresář Nástrojů - digitalni-nastroje.cz buduje adresář AI nástrojů, který vám pomůže najít vaše oblíbené AI nástroje. Můžete zde najít nástroje pro AI psaní, AI marketing, AI parafráze, AI SEO, AI studium, AI generátory, AI výzkum, AI umění, AI hudbu, AI video, AI kódování, AI fotografie a další."
+    },
+    "2": {
+      "question": "Jak najít vaše AI nástroje v digitalni-nastroje.cz adresáři?",
+      "answer-1": "1. Otevřete digitalni-nastroje.cz.",
+      "answer-2": "2. Prozkoumejte AI nástroje v digitalni-nastroje.cz adresáři.",
+      "answer-3": "3. Klikněte na AI nástroj, který potřebujete, pro zobrazení detailů a návštěvu."
+    },
+    "3": {
+      "question": "Jaké jsou hlavní funkce digitalni-nastroje.cz Adresáře Nástrojů?",
+      "answer-1": "1. Bezplatný AI Adresář: Je zdarma najít zde vaše oblíbené AI Nástroje.",
+      "answer-2": "2. Seznam Startupů: Bezplatný seznam startupů pro vývojáře AI nástrojů."
+    },
+    "4": {
+      "question": "Je přidání AI nástrojů do digitalni-nastroje.cz Adresáře zdarma?",
+      "answer": "Ano, momentálně je to zdarma. Ale měli byste sdílet zpětný odkaz na digitalni-nastroje.cz Adresář Nástrojů!"
+    },
+    "5": {
+      "question": "Jaké kategorie AI Nástrojů digitalni-nastroje.cz Adresář podporuje?",
+      "answer": "V budoucnu budeme podporovat všechny druhy AI Nástrojů. Prosím počkejte několik dní."
+    },
+    "6": {
+      "question": "Jaká je frekvence aktualizací AI nástrojů v digitalni-nastroje.cz Adresáři?",
+      "answer": "Seznam AI nástrojů je aktualizován denně."
+    },
+    "7": {
+      "question": "Podporuje GPT-4o nebo Sora AI?",
+      "answer": "Můžete zde najít nástroje GPT-4o nebo Sora AI. Zde najdete představení GPT-4o a Sora videa a můžete navštívit webové stránky nástrojů."
+    },
+    "8": {
+      "question": "Řešení problémů",
+      "answer": "Pokud se obsah nezobrazuje, zkuste jiný prohlížeč nebo vyčistěte mezipaměť. Pokud problémy přetrvávají, kontaktujte nás na petr.sovadina9@gmail.com."
+    },
+    "9": {
+      "question": "Jak je generován obsah digitalni-nastroje.cz Adresáře?",
+      "answer": "Obsah popisů AI nástrojů je generován pomocí GPT-4o od OpenAI."
+    },
+    "10": {
+      "question": "Jaká jsou práva k používání AI nástrojů?",
+      "answer": "digitalni-nastroje.cz Adresář Nástrojů je pouze adresářem AI nástrojů. Práva k používání AI nástrojů jsou založena na webových stránkách jednotlivých AI nástrojů."
+    },
+    "11": {
+      "question": "Je webové rozhraní digitalni-nastroje.cz Adresáře open source?",
+      "answer": "Ano, webové rozhraní digitalni-nastroje.cz Adresáře bude open source na githubu. Prosím, dejte nám hvězdičku."
+    }
+  },
+  "FooterNavigation": {
+    "privacyPolicy": {
+      "1-h1": "Zásady ochrany osobních údajů pro Open-source digitalni-nastroje.cz Adresář Nástrojů",
+      "1-p": "Tato stránka informuje návštěvníky o našich zásadách týkajících se shromažďování, používání a zveřejňování osobních údajů, pokud se někdo rozhodne používat naši službu. Pokud se rozhodnete používat naši službu, souhlasíte se shromažďováním a používáním informací v souvislosti s těmito zásadami.",
+      "2-h2": "1. Shromažďování a používání informací",
+      "2-p": "Pro lepší zkušenost při používání naší služby můžeme požadovat, abyste nám poskytli určité osobně identifikovatelné informace. Informace, které požadujeme, budou uchovány na vašem zařízení a nejsou námi nijak shromažďovány.",
+      "3-h2": "2. Data protokolu",
+      "3-p": "Chceme vás informovat, že kdykoli používáte naši službu, v případě chyby v aplikaci shromažďujeme data a informace (prostřednictvím produktů třetích stran) na vašem telefonu, tzv. Data protokolu.",
+      "4-h2": "3. Cookies",
+      "4-p": "Cookies jsou soubory s malým množstvím dat, které se běžně používají jako anonymní jedinečné identifikátory. Tyto jsou odesílány do vašeho prohlížeče z navštívených webových stránek a jsou uloženy v interní paměti vašeho zařízení.",
+      "5-h2": "4. Poskytovatelé služeb",
+      "5-p-1": "Můžeme zaměstnávat společnosti a jednotlivce třetích stran z následujících důvodů:",
+      "5-li-1": "Pro usnadnění naší služby;",
+      "5-li-2": "Pro poskytování služby naším jménem;",
+      "5-li-3": "Pro provádění služeb souvisejících se službou;",
+      "5-li-4": "Pro pomoc při analýze používání naší služby;",
+      "5-p-2": "Chceme informovat uživatele této služby, že tyto třetí strany mají přístup k vašim osobním údajům.",
+      "6-h2": "5. Bezpečnost",
+      "6-p": "Vážíme si vaší důvěry v poskytování vašich osobních údajů, proto se snažíme používat komerčně přijatelné prostředky pro jejich ochranu.",
+      "7-h2": "6. Odkazy na jiné stránky",
+      "7-p": "Tato služba může obsahovat odkazy na jiné stránky. Pokud kliknete na odkaz třetí strany, budete přesměrováni na tyto stránky.",
+      "8-h2": "7. Změny těchto zásad ochrany osobních údajů",
+      "8-p": "Tyto zásady ochrany osobních údajů můžeme čas od času aktualizovat. Proto vám doporučujeme pravidelně kontrolovat tuto stránku."
+    },
+    "termsConditions": {
+      "1-h1": "Podmínky služby pro digitalni-nastroje.cz Adresář",
+      "1-p": "Vítejte v digitalni-nastroje.cz Adresáři! Naše webová stránka na adrese https://digitalni-nastroje.cz (\"Webová stránka\") je věnována poskytování možnosti vytvářet vlastní obrázky.",
+      "2-h2": "1. Licence k použití",
+      "2-p": "Je vám udělena omezená, nevýhradní, nepřenosná licence k používání webové stránky a jejích služeb pro osobní, nekomerční účely.",
+      "3-h2": "2. Vlastnictví",
+      "3-p": "Vlastnictví obrázků generovaných z textu na webové stránce patří osobě, která obrázek vytvořila. digitalni-nastroje.cz si nenárokuje žádné vlastnictví obrázků vytvořených uživateli.",
+      "4-h2": "3. Sběr uživatelských dat",
+      "4-p": "Shromažďujeme osobní údaje (jméno, e-mail a platební informace) a neosobní údaje (webové cookies) pro zlepšení našich služeb.",
+      "5-h2": "4. Rozhodné právo",
+      "5-p": "Tyto podmínky se řídí a vykládají v souladu se zákony České republiky.",
+      "6-h2": "5. Změny podmínek",
+      "6-p": "digitalni-nastroje.cz Adresář si vyhrazuje právo kdykoli podle vlastního uvážení upravit nebo nahradit tyto podmínky.",
+      "7-h2": "6. Kontaktní informace",
+      "7-p": "Pokud máte jakékoli dotazy ohledně těchto podmínek, kontaktujte nás na petr.sovadina9@gmail.com.",
+      "last-p": "Používáním digitalni-nastroje.cz Adresáře vyjadřujete souhlas s těmito podmínkami služby."
+    }
+  },
+  "NotFound": {
+    "title": "404 Stránka nenalezena",
+    "goHome": "domů"
+  },
+  "Home": {
+    "title": "Objevte nejlepší AI nástroje 2024",
+    "subTitle": "Získejte své oblíbené AI nástroje v Open-source digitalni-nastroje.cz Adresáři Nástrojů. Seznam AI nástrojů je denně aktualizován pomocí GPT-4o. Přidání je zdarma pro zlepšení vašeho SEO.",
+    "ai-navigate": "Seznam AI nástrojů",
+    "exploreMore": "Získat více AI nástrojů",
+    "checkDetail": "Zobrazit detail",
+    "search": "Hledat",
+    "result": "Výsledky vyhledávání",
+    "empty": "Žádná data k dispozici"
+  },
+  "Category": {
+    "home": "domů",
+    "empty": "Žádná data k dispozici"
+  },
+  "Submit": {
+    "title": "Přidejte svůj AI nástroj",
+    "subTitle": "Přidejte svůj AI nástroj a získejte návštěvnost z digitalni-nastroje.cz Adresáře",
+    "website": "Název webu",
+    "url": "URL webu",
+    "submit": "Odeslat",
+    "add": "Přidat",
+    "text": "na domovskou stránku vašeho webu a poté můžete svůj web zdarma přidat!",
+    "networkError": "Chyba sítě",
+    "success": "úspěch"
+  },
+  "Startup": {
+    "title": "Nastartujte svůj startup",
+    "subTitle": "Ultimátní seznam webů pro spuštění a propagaci vašeho startupu online. Pro přidání do seznamu nebo pomoc s přidáním vašeho produktu do bezplatného seznamu nás prosím kontaktujte na: petr.sovadina9@gmail.com.",
+    "updateTime": "Kurátorováno a aktualizováno denně. Naposledy aktualizováno:",
+    "table": {
+      "da": "DA",
+      "website": "Web",
+      "tags": "Štítky",
+      "price": "Cena",
+      "submission": "Přihlášení"
+    },
+    "detail": {
+      "visitWebsite": "Navštívit web",
+      "introduction": "Úvod"
+    }
+  },
+  "Explore": {
+    "title": "Objevte nejlepší AI nástroje 2024",
+    "subTitle": "Získejte své oblíbené AI nástroje v digitalni-nastroje.cz Adresáři Nástrojů. Seznam AI nástrojů je denně aktualizován pomocí GPT-4o."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Získejte své nejlepší AI nástroje | Open-source digitalni-nastroje.cz Adresář Nástrojů",
+      "description": "digitalni-nastroje.cz Adresář je nástroj poskytující bezplatný adresář AI nástrojů. Získejte své oblíbené AI nástroje s digitalni-nastroje.cz Adresářem, který si klade za cíl shromáždit všechny AI nástroje a poskytnout to nejlepší uživatelům.",
+      "keywords": "digitalni-nastroje.cz Adresář"
+    },
+    "ai": {
+      "titleSubfix": "digitalni-nastroje.cz Adresář"
+    },
+    "explore": {
+      "title": "Nejlepší AI nástroje 2024 | Open-source digitalni-nastroje.cz Adresář Nástrojů",
+      "titlePrefix": "digitalni-nastroje.cz Adresář Prozkoumat",
+      "titleSuffix": "digitalni-nastroje.cz Adresář",
+      "description": "digitalni-nastroje.cz Adresář je nástroj poskytující bezplatný adresář AI nástrojů. Získejte své oblíbené AI nástroje s digitalni-nastroje.cz Adresářem, který si klade za cíl shromáždit všechny AI nástroje a poskytnout to nejlepší uživatelům.",
+      "keywords": "digitalni-nastroje.cz Adresář"
+    },
+    "submit": {
+      "title": "Přidejte svůj AI nástroj a získejte návštěvnost | digitalni-nastroje.cz Adresář"
+    }
+  }
+} 

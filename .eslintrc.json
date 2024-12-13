@@ -21,6 +21,9 @@
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
     "react/require-default-props": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["**/*.test.{ts,tsx}", "**/*.spec.{ts,tsx}", "**/tailwind.config.ts"]
+    }]
   }
 }

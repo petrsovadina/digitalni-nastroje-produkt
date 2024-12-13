@@ -1,298 +1,69 @@
-# Open Source Tap4 AI Web UI
+# Open Source Tap4 AI Webové Rozhraní
 
-This is an open-source AI Tools Directory project from [Tap4 AI Tool Directory](https://tap4.ai). Our goal is to make it
-easy for everyone to have their own AI Tools Directory, to collect their favorite AI tool products. This project is very
-lightweight and easy to maintain, suitable for individual developers interested in AI navigation sites, and also
-suitable for learners interested in NextJs. Everyone is welcome to fork and star.
+Toto je open-source projekt Adresáře AI Nástrojů od [Tap4 AI Tool Directory](https://tap4.ai). Naším cílem je umožnit každému mít vlastní Adresář AI Nástrojů pro sběr oblíbených AI produktů. Tento projekt je velmi odlehčený a snadno udržovatelný, vhodný pro jednotlivé vývojáře se zájmem o AI navigační stránky a také pro studenty se zájmem o NextJs. Každý je vítán k forknutí a označení hvězdičkou.
 
-[Simplified Chinese](https://github.com/6677-ai/tap4-ai-webui/blob/main/README.zh-CN.md) | English
+[Zjednodušená čínština](https://github.com/6677-ai/tap4-ai-webui/blob/main/README.zh-CN.md) | Čeština
 
-## Support Tap4 AI in Product Hunt
+## Podpořte Tap4 AI na Product Hunt
 
 <a href="https://www.producthunt.com/posts/ai-tools-directory-by-tap4-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ai&#0045;tools&#0045;directory&#0045;by&#0045;tap4&#0045;ai" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464357&theme=light" alt="AI&#0032;Tools&#0032;Directory&#0032;by&#0032;Tap4&#0032;AI - Open&#0045;source&#0032;AI&#0032;navigation&#0032;&#0038;&#0032;discovery&#0032;with&#0032;multi&#0045;language | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-## Version 2.0.0 Update Notes
+## Poznámky k verzi 2.0.0
 
-- AI site data is stored using a supabase database.
-- It is connected to the Tap4 AI crawler project, supporting fully automatic submission and collection.
-- Supports simple categorization and search.
+- Data AI stránek jsou uložena v databázi Supabase
+- Je propojena s projektem Tap4 AI crawler, podporující plně automatické odesílání a sběr
+- Podporuje jednoduché kategorizování a vyhledávání
 
-Note: If you are not familiar with the database, or are concerned about compatibility issues with version 1.0.0, please
-click to switch to the [version 1.0.0 branch](https://github.com/6677-ai/tap4-ai-webui/tree/v1.0.0).
+Poznámka: Pokud nejste obeznámeni s databází nebo máte obavy ohledně kompatibility s verzí 1.0.0, přepněte prosím na [větev verze 1.0.0](https://github.com/6677-ai/tap4-ai-webui/tree/v1.0.0).
 
-## Latest Features Introduction
+## Představení nejnovějších funkcí
 
-- Supports the display of AI tool lists.
-- Supports AI tool category filtering.
-- Supports AI tool search.
-- Supports the display of AI tool Markdown details.
-- SEO friendly (supports i18n).
+- Podporuje zobrazení seznamů AI nástrojů
+- Podporuje filtrování kategorií AI nástrojů
+- Podporuje vyhledávání AI nástrojů
+- Podporuje zobrazení detailů AI nástrojů v Markdown
+- SEO přívětivý (podporuje i18n)
 
-## Technical Stack Description
+## Popis technického stacku
 
-- Uses NEXT 14 and app routing (React server components).
-- Supabase serverless database.
-- Internationalization.
-- SEO friendly (supports i18n).
-- Dynamic sitemap.xml (supports i18n).
-- Tailwind CSS.
+- Používá NEXT 14 a app routing (React server komponenty)
+- Supabase serverless databáze
+- Internacionalizace
+- SEO přívětivý (podporuje i18n)
+- Dynamický sitemap.xml (podporuje i18n)
+- Tailwind CSS
 
-## Front-end Page Screenshot
+## Screenshot front-endu
 
 ![tap4-ai](./public/images/tap4ai.zh-CN.png)
 
-## Follow and Support Links
+## Odkazy pro sledování a podporu
 
-Please follow our Twitter: https://x.com/tap4ai
+Sledujte nás prosím na Twitteru: https://x.com/tap4ai
 
-If you find the project helpful, please consider buying me a coffee:
+Pokud vám projekt pomohl, zvažte prosím koupi kávy:
 
 <a href="https://www.buymeacoffee.com/tap4ai0o" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-If you are interested in the project, please add my WeChat: helloleo2023, note: "tap4 ai open source"
+Pokud máte zájem o projekt, přidejte si mě na WeChat: helloleo2023, poznámka: "tap4 ai open source"
 
-## Deployment Instructions
+## Pokyny k nasazení
 
-### Deploying Tap4 AI Crawler
+### Nasazení Tap4 AI Crawleru
 
-See [Tap4 AI Crawler](https://github.com/6677-ai/tap4-ai-crawler) for details. After deployment, you can use the
-platform's domain name or a custom domain name as the API interface for generating AI tool web page content (e.g.,
-https://{crawler_domain}/site/crawl, where {crawler_domain} is your specific domain name).
+Podrobnosti viz [Tap4 AI Crawler](https://github.com/6677-ai/tap4-ai-crawler). Po nasazení můžete použít doménu platformy nebo vlastní doménu jako API rozhraní pro generování obsahu webových stránek AI nástrojů (např. https://{crawler_domain}/site/crawl, kde {crawler_domain} je vaše specifická doména).
 
-**You need to configure it in the CRAWLER_API environment variable.**
+**Musíte to nakonfigurovat v proměnné prostředí CRAWLER_API.**
 
-### Creating a Supabase Database and Executing SQL Scripts
+### Vytvoření Supabase databáze a spuštění SQL skriptů
 
-- Register on [Supabase](https://supabase.com/), create a database, and record the SUPABASE_URL and SUPABASE_ANON_KEY
-  for later Vercel environment variable deployment.
-- Execute the SQL files in the project's db directory on the Supabase backend: create_table.sql,
-  insert_category_data.sql, insert_data.sql.
+- Zaregistrujte se na [Supabase](https://supabase.com/), vytvořte databázi a zaznamenejte si SUPABASE_URL a SUPABASE_ANON_KEY pro pozdější nasazení proměnných prostředí na Vercel.
+- Spusťte SQL soubory z adresáře db projektu na backendu Supabase: create_table.sql, insert_category_data.sql, insert_data.sql.
 
-**Note: If you need to modify the data, you can refer to the SQL files or directly edit them on the Supabase backend.**
+**Poznámka: Pokud potřebujete upravit data, můžete se podívat do SQL souborů nebo je přímo upravit na backendu Supabase.**
 
-### Deploy on Vercel **(Don't forget to set the environment variables)**
+### Nasazení na Vercel **(Nezapomeňte nastavit proměnné prostředí)**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F6677-ai%2Ftap4-ai-webui.git&env=NEXT_PUBLIC_SITE_URL,GOOGLE_TRACKING_ID,GOOGLE_ADSENSE_URL,CONTACT_US_EMAIL,NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,CRAWLER_API,CRAWLER_API_KEY,CRON_AUTH_KEY,SUBMIT_AUTH_KEY&project-name=tap4-ai)
+[![Nasadit s Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F6677-ai%2Ftap4-ai-webui.git&env=NEXT_PUBLIC_SITE_URL,GOOGLE_TRACKING_ID,GOOGLE_ADSENSE_URL,CONTACT_US_EMAIL,NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,CRAWLER_API,CRAWLER_API_KEY,CRON_AUTH_KEY,SUBMIT_AUTH_KEY&project-name=tap4-ai)
 
-Environment params as below: **Note: All key is in need, and the value including
-NEXT_PUBLIC_SITE_URL,NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY write with the correct value**
-
-```sh
-# Your domain
-NEXT_PUBLIC_SITE_URL="https://tap4.ai"
-
-# Google tracking ID and ad URL
-GOOGLE_TRACKING_ID="G-XXXXXXX" GOOGLE_ADSENSE_URL="https://xxxx.googlesyndication.com/xxxxx/xxxxx"
-
-# Contact email at the bottom
-CONTACT_US_EMAIL="contact@tap4.ai"
-
-# Supabase database URL and key
-NEXT_PUBLIC_SUPABASE_URL="https://xxxyyyzzz.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="XXX.YYY.ZZZ"
-
-# Web crawler API interface
-CRAWLER_API="https://{crawler_domain}/site/crawl_async"
-
-# Crawler interface verification key
-CRAWLER_API_KEY="xxxx"
-
-# Custom interface verification key
-CRON_AUTH_KEY="keyxxxx"
-
-# Submit API verification key
-SUBMIT_AUTH_KEY="xxxx"
-
-```
-
-**Note: This version uses Vercel's scheduled tasks to automatically read and submit websites and generate website
-results.**
-
-- Free version of Vercel: Supports only one call per day, you can manually call {domain}/api/cron, using POST, Header:
-  {"Authorization":"Bearer auth_key"}, where auth_key is a custom configured environment variable.
-- Pro version of Vercel: You can refer to this document to configure
-  [Vercel Cron Jobs](https://vercel.com/docs/cron-jobs#cron-expressions).
-
-## Running Locally
-
-### Installation
-
-- Node
-- NVM
-- PNPM
-
-### Setup
-
-#### Clone this project
-
-```sh
-git clone https://github.com/6677-ai/tap4-ai-webui.git
-```
-
-#### Create a Supabase Database and Execute SQL Scripts
-
-Register on Supabase, create a database, and record the SUPABASE_URL and SUPABASE_ANON_KEY for later Vercel environment
-variable deployment. Execute the SQL files in the project's db directory on the Supabase backend: create_table.sql,
-insert_category_data.sql, insert_data.sql.
-
-**Note: If you need to modify the data, you can refer to the SQL files or directly edit them on the Supabase backend.**
-
-#### Set Environment Variables In the root directory, create a .env.local file and fill in the specific values, as shown below:
-
-**Note: All key is in need, and the value including
-NEXT_PUBLIC_SITE_URL,NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY write with the correct value**
-
-```sh
-# Your domain
-NEXT_PUBLIC_SITE_URL="https://tap4.ai"
-
-# Google tracking ID and ad URL
-GOOGLE_TRACKING_ID="G-XXXXXXX" GOOGLE_ADSENSE_URL="https://xxxx.googlesyndication.com/xxxxx/xxxxx"
-
-# Contact email at the bottom
-CONTACT_US_EMAIL="contact@tap4.ai"
-
-# Supabase database URL and key
-NEXT_PUBLIC_SUPABASE_URL="https://xxxyyyzzz.supabase.co" NEXT_PUBLIC_SUPABASE_ANON_KEY="XXX.YYY.ZZZ"
-
-# Web crawler API interface
-CRAWLER_API="https://craw_domain/site/crawl_async"
-
-# Crawler interface verification key
-CRAWLER_API_KEY="xxxx"
-
-# Custom interface verification key
-CRON_AUTH_KEY="keyxxxx"
-
-# Submit API verification key
-SUBMIT_AUTH_KEY="xxxx"
-
-```
-
-#### (5) runs on dev mode
-
-switch to the particular node version
-
-```sh
-nvm use
-```
-
-install packages
-
-```sh
-pnpm i
-```
-
-run on dev mode
-
-```sh
-pnpm dev
-```
-
-## How to upate your content?
-
-### Manually Modify the Database
-
-Modify the data in the web_navigation table of Supabase, please pay attention to the format of markdown.
-
-### If the Crawler Fails to Load, How to Handle It
-
-Due to compatibility issues with different site anti-crawling mechanisms, the crawler may currently fail to load. For
-such issues, you currently need to manually query the database submit table, and then manually create the relevant
-website content and insert it into the web_navigation table.
-
-### How to get the ai tools for project initialization?
-
-You can get the 13000+ AIs from Tap4 AI collected from other AI Tools Directory in
-[AI Source List](https://github.com/6677-ai/tap4-ai-webui/blob/main/ai_source_list)
-
-## Wanna submit your website on Tap4.ai?
-
-Open: [Tap4 AI](https://tap4.ai)
-
-### Wanna add you website to our `/startup` page?
-
-- open an issue here: [TAP4-AI-Directory](https://github.com/6677-ai/TAP4-AI-Directory/issues)
-- email us: contact@tap4.ai
-
-## Links to our products
-
-### AI Video Online - Advanced AI Video All in One
-
-[AI Video Online](https://videoweb.ai/)
-More about AI Video Online:
-https://www.zhihu.com/pin/1835046959477567488
-
-### Flux Pro AI - Free Online Flux.1 AI Image Generator
-
-[Flux 1.1 Pro](https://fluxproweb.com/)
-More about Flux Pro AI
-https://www.zhihu.com/pin/1832771259513069568
-
-
-### Free Stable Diffusion 3 Online Tool
-
-[Free Stable Diffusion 3 Online](https://stable-diffusion-3.online)
-
-### Free Tiny Png Tool
-
-[Free Type Png Tool](https://freetinypng.com)
-
-### Flux AI - Flux.1 AI Image Generator
-
-[Flux AI](https://flux-ai.io/)
-
-## Other open source
-
-### Website content AI crawler
-
-visit: [6677-ai/tap4-ai-crawler](https://github.com/6677-ai/tap4-ai-crawler)
-
-
-#### More AI
-
-### Photo to Video AI
-
-Photo to Video AI is currently available for free experience, please visit
-[Photo to Video AI](https://dreammachineai.online/)
-
-### Flux Pro Image Generator
-
-Flux Pro Image Generator is currently available for free experience, please visit
-[Flux Pro Image Generator](https://flux-pro.net/)
-
-### Chat o1
-
-Chatbot build with openai o1 and chatgpt 4o, please visit
-[Chat O1](https://chat4o.ai/)
-
-### Grok Image Generator
-
-Grok Image Generator with flux ai, please visit
-[Grok Image Generator](https://grokimagegenerator.net/))
-
-### Free Stable Diffusion 3 Online
-
-Stable Diffusion 3 Medium is currently available for free experience, please visit
-[Free Stable Diffusion 3 Online](https://stable-diffusion-3.online/)
-
-### Artiverse AI Tools Directory
-
-Artiverse AI Tools Directory. If you are interested with it, visit
-[Tattoo AI Design](https://artiverse.app/)
-
-### The Tattoo AI Generator and Design
-
-Tattao AI Design is a tattoo ai generator and design for the tattoo fans. If you are interested with it, visit
-[Tattoo AI Design](https://tattooai.design)
-
-### Best AI Image Generator
-
-Best AI Image Generator is the most powerful AI Image Generator integrated with Flux AI and Stable Diffusion AI. If you are interested with it, visit
-[Best AI Image Generator](https://bestimage.ai/)
-
-### Dream Companion AI
-
-Let your AI companion take care of your most personal needs with our innovative NSFW AI roleplay experience.. If you are interested with it, visit
-[Dream Companion AI](https://www.mydreamcompanion.com/)
-
+Parametry prostředí jsou následující: **Poznámka: Všechny klíče jsou potřebné a hodnoty včetně NEXT_PUBLIC_SITE_URL,NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY musí být vyplněny správnými hodnotami**

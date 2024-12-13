@@ -4,74 +4,279 @@
 
 @layer base {
   :root {
+    /* Moderní, čisté barvy */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --foreground: 20 14.3% 4.1%;
+    
+    --card: 0 0% 98%;
+    --card-foreground: 20 14.3% 4.1%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    --popover-foreground: 20 14.3% 4.1%;
+    
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+    
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 60 9.1% 97.8%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24 5.4% 63.9%;
+    
     --radius: 0.5rem;
   }
-
+ 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+    
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.4% 63.9%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    font-family: var(--font-space-mono), ui-monospace, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-space-mono), ui-monospace, monospace;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.7;
+  }
+
+  /* Vylepšená typografie */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-foreground;
+    font-family: var(--font-space-mono), ui-monospace, monospace;
+  }
+
+  h1 { 
+    @apply text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-6;
+    letter-spacing: -0.03em;
+  }
+  
+  h2 { 
+    @apply text-3xl md:text-4xl lg:text-5xl leading-[1.2] mb-5;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 { 
+    @apply text-2xl md:text-3xl lg:text-4xl leading-[1.3] mb-4;
+    letter-spacing: -0.01em;
+  }
+  
+  h4 { 
+    @apply text-xl md:text-2xl lg:text-3xl leading-[1.4] mb-4;
+  }
+  
+  h5 { 
+    @apply text-lg md:text-xl lg:text-2xl leading-[1.5] mb-3;
+  }
+  
+  h6 { 
+    @apply text-base md:text-lg lg:text-xl leading-[1.6] mb-3;
+  }
+
+  /* Vylepšené odstavce */
+  p {
+    @apply text-base md:text-lg leading-relaxed mb-6 text-foreground/90;
+    font-family: var(--font-space-mono), ui-monospace, monospace;
+    max-width: 70ch;
+  }
+
+  /* Vylepšené odkazy */
+  a {
+    @apply text-foreground hover:text-foreground/90 transition-colors font-bold 
+    underline-offset-4 hover:underline decoration-2 decoration-primary/30 
+    hover:decoration-primary/60;
+  }
+
+  /* Seznamy */
+  ul, ol {
+    @apply my-6 ml-6 text-foreground/90;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  /* Zvýraznění */
+  strong, b {
+    @apply font-bold text-foreground;
+  }
+
+  /* Citace */
+  blockquote {
+    @apply pl-4 border-l-2 border-primary/50 italic my-6 text-foreground/80;
+  }
+
+  /* Kód */
+  code {
+    @apply bg-muted px-1.5 py-0.5 rounded-md text-sm font-mono;
+  }
+
+  pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto my-6;
+  }
+
+  pre code {
+    @apply bg-transparent p-0 text-sm;
+  }
+
+  /* Tabulky */
+  table {
+    @apply w-full my-6 text-sm border-collapse;
+  }
+
+  th {
+    @apply text-left p-2 border-b font-bold text-foreground;
+  }
+
+  td {
+    @apply p-2 border-b text-foreground/90;
+  }
+
+  /* Horizontální linka */
+  hr {
+    @apply my-8 border-t border-border;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl;
+  }
+
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Modernější karty */
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border p-6 shadow-sm transition-all duration-200 
+    hover:shadow-md hover:border-foreground/20 hover:-translate-y-0.5;
+  }
+
+  /* Vylepšená tlačítka */
+  .button {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
+    disabled:opacity-50 disabled:pointer-events-none ring-offset-background px-4 py-2 select-none;
+  }
+
+  .button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+
+  /* Vylepšené inputy */
+  .input {
+    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm 
+    ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium 
+    placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 
+    focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50
+    hover:border-foreground/20 transition-colors;
+  }
+
+  /* Navigace */
+  .nav-link {
+    @apply text-foreground/90 hover:text-foreground transition-colors font-bold no-underline
+    hover:bg-accent/50 px-3 py-2 rounded-md;
+  }
+
+  .nav-link-active {
+    @apply text-foreground bg-accent font-bold;
+  }
+
+  /* Typografické komponenty */
+  .heading-xl {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-lg {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+
+  .heading-md {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+  }
+
+  .text-large {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .text-small {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  .prose {
+    @apply max-w-prose mx-auto;
   }
 }
 
@@ -80,25 +285,53 @@
     @apply flex items-center justify-center;
   }
 
-  .flex-y-center {
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-col-center {
     @apply flex flex-col items-center;
   }
 
-  .bg-frosted-glass {
-    @apply backdrop-blur-lg backdrop-filter;
+  .grid-auto-fit {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6;
   }
 
-  /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  /* Nové utility třídy */
+  .text-balance {
+    text-wrap: balance;
   }
 
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-}
 
-.tr-rounded {
-  clip-path: xywh(0 0 100% 100% round 4px);
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/80;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-0.5;
+  }
+
+  .glass {
+    @apply bg-background/80 backdrop-blur-sm border border-border/50;
+  }
+
+  /* Typografické utility */
+  .font-mono {
+    font-feature-settings: "ss01" 1, "ss02" 1, "zero" 1;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .text-compact {
+    letter-spacing: -0.02em;
+  }
+
+  .text-wide {
+    letter-spacing: 0.02em;
+  }
 }
